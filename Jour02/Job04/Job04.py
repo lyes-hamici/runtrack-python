@@ -1,18 +1,13 @@
 print("Boucle For")
+a = input("Chossir un nombre entier :")
+for n in range(int(a)+1):
 
-a = 10
-
-for i in range(11):
-    print(a * i)
+    print("--------------------------------------")
+    print("la table de multiplication de  : ", n," est :")
+    for i in range(1,11):
+        print(n , " x ", i, " = ",i*n)
 
 
 
 print("-------------------------------")
 
-print("Boucle While")
-
-b = 5
-j = 0
-while j <= 10:
-    print(b *j)
-    j +=1
