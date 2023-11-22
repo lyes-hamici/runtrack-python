@@ -1,9 +1,9 @@
 def time_to_text(minute):
-    heurs = minute // 60
+    heures = minute // 60
 
     minute = minute % 60
 
-    print(heurs,"Heurs", minute,"Minutes")
+    print(heures,"Heures et ", minute,"Minutes")
     
  
 time_to_text(125) 
