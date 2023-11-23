@@ -1,10 +1,15 @@
+def Trouve_taille(l):
+    j = 0
+    for i in l:
+        j+=1
+    return j
 
 
 
 
 
 def tri_selection(t):
-    n = len(t)
+    n = Trouve_taille(t)
     for i in range(0,n-1):
         min = i
         for j in range(i+1,n):
