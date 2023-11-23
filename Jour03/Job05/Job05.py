@@ -15,7 +15,7 @@ def calcule(num1,operator,num2):
         return num1 % num2
     
     else:
-        print("calcule")
+        print("Changer d'opérateur")
 
 
 
@@ -26,3 +26,6 @@ print(calcule(5,"-",5))
 print(calcule(5,"/",5))
 
 print(calcule(5,"%",5))
+
+
+print(calcule(5,"z",5))
