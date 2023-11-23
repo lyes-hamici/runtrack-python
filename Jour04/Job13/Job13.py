@@ -1,17 +1,11 @@
-def Trouve_taille(l):
-    j = 0
-    for i in l:
-        j+=1
-    return j
-
 def doublon(L):
     L2 = []
-    for i in range(Trouve_taille(L)):
+    for i in L:
         if i not in L2:
-            L2 += L[i]
+            L2.append(i)
     return L2
     
-    x = L2 + L
+    
 
 
 
