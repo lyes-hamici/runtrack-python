@@ -2,7 +2,7 @@ def doublon(L):
     L2 = []
     for i in L:
         if i not in L2:
-            L2.append(i)
+            L2 += [i]
     return L2
     
     
