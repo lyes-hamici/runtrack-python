@@ -1,26 +1,36 @@
-def Trouve_taille(l):
-    j = 0
-    for i in l:
-        j+=1
-    return j
+def my_long_world(longeur, phrase):
+    i = 0
+    longeur = 0
+    index = 0
+    list = []
+    new_phrase = ""
+    for letter in phrase:
+        longeur += 1
+    while i < longeur:
+        if phrase[i] == " ":
+            list += [phrase[index:i]]
+            index = i+1
+        i +=1
+    for mot in list:
+        longeur = 0
+        for letter in mot:
+            longeur += 1 
+        if longeur > 3 :
+            new_phrase += mot + " "
+    print(new_phrase)
+    
 
-def my_long_word(a,L):
-    nouvelle_liste = ""
-    for x in range(Trouve_taille(L)):
-        if x > a:
-            nouvelle_liste += str(L[x])
+phrase = "La peur est le chemin vers le côté obscur, la peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance "
 
-    return nouvelle_liste
+print("-------------------------------------------------")
 
+my_long_world(3,phrase)
 
-
-def Trouve_taille(l):
-    j = 0
-    for i in l:
-        j+=1
-    return j
-
-print("len de la liste :",Trouve_taille('La peur est le chemin vers le côté obscur, la peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance'))
+print("-------------------------------------------------")
 
 
-print(my_long_word(3,'La peur est le chemin vers le côté obscur, la peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance'))
+
+
+
+
+
