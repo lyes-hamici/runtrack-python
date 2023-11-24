@@ -7,7 +7,7 @@ def my_sort(t): #Tri à sélection d'une liste "t"
             if t[j] < t[min]:
                 min = j #Actualiser la valeur minimal
             if min != i :
-                t[i] , t[min] = t[min], t[i] #remplace les valeur
+                t[i] , t[min] = t[min], t[i] #remplace les valeurs
     a = i + j
     print("Liste trié :",t,"Nombre de coup total :",a)
 
