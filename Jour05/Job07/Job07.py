@@ -12,6 +12,9 @@ def note(l):
         if  i >= 40 and 100 > i and i%5==0 and i < i+3 :
             l2 += [int(i+2)]
 
+        elif i < 40:
+            l2.append("Echec du test")
+
 
     print("Anciennes liste de nôtes :",l,"Nouvelles liste de nôtes",l2)
 
