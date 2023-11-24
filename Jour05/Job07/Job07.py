@@ -16,7 +16,7 @@ def note(l):
             l2.append("Echec du test")
 
 
-    print("Anciennes liste de nôtes :",l,"Nouvelles liste de nôtes",l2)
+    print("Anciennes liste de notes :",l,"Nouvelles liste de notes",l2)
 
         
 
