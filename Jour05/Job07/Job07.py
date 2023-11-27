@@ -16,7 +16,7 @@ def note(l):
             l2.append("Echec du test")
 
 
-        elif i > 40:
+        elif i >= 40:
             l2.append("Test réussi")
 
 
