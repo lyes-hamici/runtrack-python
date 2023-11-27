@@ -1,15 +1,19 @@
-def my_sort(t): #Tri à sélection d'une liste "t"
-    n = len(t)
-    a = 0 #nombre de tour nécéssaire aux boucle pour trié la liste 
-    for i in range(0,n-1):
-        min = i #Conserver la valeur minimal
-        for j in range(i+1,n):
-            if t[j] < t[min]:
-                min = j #Actualiser la valeur minimal
-            if min != i :
-                t[i] , t[min] = t[min], t[i] #remplace les valeurs
-    a = i + j
-    print("Liste trié :",t,"Nombre de coup total :",a)
+def my_sort(t):
+    a=0
+    b=0
+    for i in range(1,len(t)):
+        a +=1
+        x = t[i] # mémoriser T[i] dans x
+        j = i
+        while j > 0 and t[j - 1] > x :
+            t[j] = t[j-1] 
+            j = j - 1 
+            b+=1
+        t[j] = x # placer x dans le "trou" laissé par le décalage
+
+
+    print("Liste trié :",t,"Nombre de coup total :",a+b)
+
 
 print("---------------------------------------------------------------")
 
